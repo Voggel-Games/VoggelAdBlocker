@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoggelAdBlocker - Download & Anleitung</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --success: #22c55e;
+            --warning: #eab308;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: var(--accent);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .download-box {
+            text-align: center;
+            background: linear-gradient(135deg, #1e293b, #334155);
+            border: 2px solid var(--accent);
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--bg-color);
+            font-weight: bold;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: transform 0.2s, background-color 0.2s;
+            margin-top: 15px;
+        }
+        .btn:hover {
+            background-color: #7dd3fc;
+            transform: translateY(-2px);
+        }
+        h2 {
+            color: var(--accent);
+            border-bottom: 2px solid #334155;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        code {
+            background-color: #0f172a;
+            color: #38bdf8;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        .browser-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+        .browser-tag {
+            background-color: #334155;
+            color: var(--text);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+        .step-block {
+            margin-bottom: 20px;
+        }
+        .step-block h3 {
+            color: var(--success);
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>VoggelAdBlocker</h1>
+            <p class="subtitle">Der beste Ad Blocker für Pop-ups und Werbung.</p>
+        </header>
+
+        <!-- Download Bereich -->
+        <div class="card download-box">
+            <h2>VoggelAdBlocker herunterladen</h2>
+            <p>Lade dir den Ad Blocker als ZIP-Datei herunter und entpacke den Ordner auf deinem Gerät.</p>
+            <a href="https://addons.mozilla.org/firefox/downloads/file/4977168/0b8ba63e529c4167b3c2-1.1.xpi" class="btn" download>📥 VoggelAdBlocker herunterladen</a>
+        </div>
+
+        <!-- Verfügbare Browser Liste -->
+        <div class="card">
+            <h2>🌐 Verfügbare Browser</h2>
+            <p>Der Ad-Blocker läuft auf allen folgenden unterstützten Browsern (PC & Mobil):</p>
+            <div class="browser-list">
+                <span class="browser-tag">🖥️ IceRaven (PC)</span>
+                <span class="browser-tag">🖥️ Waterfox (PC)</span>
+                <span class="browser-tag">🖥️ Mozilla Firefox (PC)</span>
+                <span class="browser-tag">🖥️ LibreWolf (PC)</span>
+                <span class="browser-tag">📱 Firefox für Android</span>
+                <span class="browser-tag">📱 Mull Browser (Android)</span>
+            </div>
+        </div>
+
+       <!-- Formelle Installationsanweisungen nach dem Download -->
+<div class="card">
+    <h3>🖥️ Installationsanleitung nach dem Download (Desktop-Browser)</h3>
+    <div class="browser-grid">
+        
+        <div class="browser-item">
+            <h4>Mozilla Firefox, Waterfox & LibreWolf (PC)</h4>
+            <ol>
+                <li>Klicken Sie oben auf den Download-Button, um die <code>.xpi</code>-Datei herunterzuladen.</li>
+                <li>Öffnen Sie den Download-Ordner und ziehen Sie die Datei mit der Maus direkt in Ihren geöffneten Browser-Tab.</li>
+                <li>Bestätigen Sie das Hinweisfenster oben rechts mit <strong>Hinzufügen</strong>.</li>
+            </ol>
+        </div>
+
+        <div class="browser-item">
+            <h4>Alternative Methode (Über das Menü)</h4>
+            <ol>
+                <li>Drücken Sie in Ihrem Browser die Tasten <code>Strg + Shift + A</code>, um die Add-on-Verwaltung zu öffnen.</li>
+                <li>Klicken Sie auf das Zahnrad-Symbol oben rechts und wählen Sie <strong>Add-on aus Datei installieren...</strong> aus.</li>
+                <li>Wählen Sie die heruntergeladene <code>.xpi</code>-Datei aus und bestätigen Sie die Installation.</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <h3 class="section-title">📱 Installationsanleitung nach dem Download (Mobilgeräte / Android)</h3>
+    <div class="browser-grid">
+        
+        <div class="browser-item">
+            <h4>Firefox für Android & Mull Browser</h4>
+            <ol>
+                <li>Besuchen Sie diese Webseite und tippen Sie auf den direkten Download-Button.</li>
+                <li>Öffnen Sie nach dem Download Ihren Datei-Manager oder tippen Sie in den Browser-Downloads auf die heruntergeladene <code>.xpi</code>-Datei.</li>
+                <li>Wählen Sie Firefox oder Mull zum Öffnen aus und tippen Sie im Pop-up auf <strong>Hinzufügen</strong>.</li>
+            </ol>
+        </div>
+
+    </div>
+</div>
+
+        <div class="card" style="text-align: center; color: var(--text-muted); font-size: 0.9rem;">
+            <p>&copy; 2026 Voggel AdBlocker. Alle Rechte vorbehalten.</p>
+        </div>
+    </div>
+
+</body>
+</html>

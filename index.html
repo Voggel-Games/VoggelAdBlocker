@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voggel OS - Nur für Windows 10 und 11</title>
+    <style>
+        :root {
+            --primary: #0066cc;
+            --success: #10b981;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px 40px 20px;
+            background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        h1 span {
+            color: var(--primary);
+        }
+
+        p.subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-demo {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .btn-full {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.95;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            color: var(--primary);
+            font-size: 1.25rem;
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        /* Pop-up Overlay */
+        #popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(4px);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-box {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 10%);
+        }
+
+        .popup-box h3 { margin-top: 0; color: var(--text-main); }
+        .popup-box p { color: var(--text-muted); }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Voggel <span>OS</span></h1>
+        <p class="subtitle">Verwandle deinen PC in ein schlankes, blitzschnelles und minimalistisches Betriebssystem-Erlebnis.<p>Nur für Windows 10 und 11 64-bit.</p>
+        
+        <div class="cta-buttons">
+            <a href="https://github.com/Voggel-Games/Voggel-OS-Installations-Paket/releases/download/v.1.0.0/Voggel.OS.Installations.Paket.DEMO.zip" class="btn btn-demo">[DEMO] Kostenlos Herunterladen</a>
+            <button class="btn btn-full" onclick="showPopup()">Vollversion Herunterladen</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 40px;">Warum Voggel OS?</h2>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Tastatur-Steuerung</h3>
+                <p>Bediene deinen gesamten Workflow flüssig über Shortcuts wie die Bild-Tasten zum App-Switching und Einfg für den Desktop.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Schnellstart & Startmenü</h3>
+                <p>Mit intuitiven Befehlen wie C+Win+V für das Startmenü und Win+S für das Schnellstart-Panel hast du alles sofort im Zugriff.</p>
+            </div>
+            <div class="feature-card">
+                <h3>System-Integration</h3>
+                <p>Direkter Schnellzugriff auf den Microsoft Store, Windows-Einstellungen und den Defender über dedizierte Tasten.</p>
+            </div>
+        </div>
+
+    <div class="feature-card">
+                <h3>[DEMO] Funktionen, Vollversion und Feedback</h3>
+                <p>Wir Arbeiten derzeit noch an der Vollversion. Sie wird kostenlos sein und alle versprochenen Funktionenen beinhalten. Die [DEMO] wird zunächst nur wenige oder Fehlerhafte Funktionen beinhalten. Feedback zur [DEMO] bitte an folgende Email Adresse senden:<h4>voggelsupport@gmail.com</h4></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up für Vollversion -->
+    <div id="popup-overlay">
+        <div class="popup-box">
+            <h3>Vollversion in Kürze</h3>
+            <p>Die Vollversion ist aktuell noch nicht verfügbar. Wir warten erst euer Feedback zur Demo ab, um sie perfekt zu machen!</p>
+            <button class="btn btn-full" onclick="closePopup()" style="margin-top: 15px; width: 100%;">Verstanden</button>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Voggel OS. Alle Rechte vorbehalten.
+    </footer>
+
+    <script>
+        function showPopup() {
+            document.getElementById('popup-overlay').style.display = 'flex';
+        }
+        function closePopup() {
+            document.getElementById('popup-overlay').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
